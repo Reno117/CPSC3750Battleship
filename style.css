@@ -1,0 +1,29 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: #0b1c2d;
+  color: white;
+}
+
+#board {
+  display: grid;
+  grid-template-columns: repeat(8, 40px);
+  gap: 5px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.cell {
+  width: 40px;
+  height: 40px;
+  background: #1e90ff;
+  cursor: pointer;
+}
+
+.cell.hit {
+  background: crimson;
+}
+
+.cell.miss {
+  background: #ccc;
+}
